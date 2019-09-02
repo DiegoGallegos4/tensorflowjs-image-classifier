@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Deep Learning Examples</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <style>.center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }</style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section class="hero">
+        <nav class="hero-body">
+            <h1 class="title">MobileNet Image Classifier</h1>
+            <h2 class="subtitle">Uses transfer learning to predict images from user provided links</h2>
+        </nav>
+    </section>
+    <!-- ./Navbar -->
+
+    <!-- Input -->
+    <section class="section">
+        <div class="columns is-vcentered">
+            <div class="column is-half">
+                <h2 class="title is-5 is-uppercase has-text-weight-medium">Image to Predict</h2>
+                <h3 class="subtitle is-6">Enter an image url to be classified by MobileNet preloaded model.</h3>
+                <div class="field is-grouped">
+                    <p class="control is-expanded">
+                        <input class="input" name="url" type="text" placeholder="Enter image url">
+                    </p>
+                    <p class="control">
+                        <a class="button" id="load-model">Predict</a>
+                    </p>
+                </div>
+                <div id="status"></div>
+            </div>
+            <div class="column center">
+                <figure class="image">
+                    <img id="image-to-classify" src="https://bulma.io/images/placeholders/256x256.png" alt="Image would display here." style="width:256;height:256;">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- ./Input -->
+
+    <!-- Results -->
+    <section class="section">
+        <h2 class="title is-5 is-uppercase has-text-weight-medium">Results</h2>
+        <!-- <h3 class="subtitle is-6">Enter a url from any MobileNet Class.</h3> -->
+        <table class="table" id="classes-table"></table>
+    </section>
+    <!-- ./Results -->
+    <script src="/week1-assignment.e31bb0bc.js"></script>
+</body>
+
+</html>

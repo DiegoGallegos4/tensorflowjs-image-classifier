@@ -1,0 +1,53 @@
+Arguments: 
+  /Users/diegogallegos/.nvm/versions/node/v11.9.0/bin/node /usr/local/Cellar/yarn/1.15.2/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/diegogallegos/google-cloud-sdk/bin:/opt/apache-maven/bin:/Users/diegogallegos/.cargo/bin:/Users/diegogallegos/.nvm/versions/node/v11.9.0/bin:/Users/diegogallegos/libs/flutter/bin:/Users/diegogallegos/.cargo/bin:/Users/diegogallegos/.rvm/gems/ruby-2.4.2/bin:/Users/diegogallegos/.rvm/gems/ruby-2.4.2@global/bin:/Users/diegogallegos/.rvm/rubies/ruby-2.4.2/bin:/Users/diegogallegos/.local/bin/:/Users/diegogallegos/Library/Python/2.7/bin/:/Users/diegogallegos/fabric-samples/bin:/usr/local/bin/:/Library/PostgreSQL/9.6/bin/:/Users/diegogallegos/anaconda2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/diegogallegos/Library/Android/sdk/tools:/Users/diegogallegos/Library/Android/sdk/platform-tools:/usr/local/bin:/Users/diegogallegos/.rvm/bin:/Users/diegogallegos/.rvm/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  11.9.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/diegogallegos/Documents/Apps/learn/make-money-ml/week1/week1-assignment/package.json: Unexpected token } in JSON at position 560
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "image-classifier",
+    "version": "1.0.0",
+    "description": "Classify images via MobileNet model.",
+    "main": "index.js",
+    "scripts": {
+      "build": "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url ./"
+    },
+    "author": "Diego Gallegos",
+    "license": "MIT",
+    "devDependencies": {
+      "babel-core": "^6.26.3",
+      "babel-plugin-transform-runtime": "^6.23.0",
+      "babel-polyfill": "^6.26.0",
+      "babel-preset-env": "^1.7.0",
+      "clang-format": "^1.2.4",
+      "cross-env": "^5.2.0",
+      "parcel-bundler": "^1.12.3",
+    },
+    "dependencies": {
+      "@tensorflow-models/mobilenet": "^2.0.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
